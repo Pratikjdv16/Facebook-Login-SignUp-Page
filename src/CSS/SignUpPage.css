@@ -1,0 +1,485 @@
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+  font-family: sans-serif;
+}
+
+.signUpPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.signUpPage-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 432px;
+  height: fit-content;
+}
+
+.signUpPage-top-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 432px;
+  height: 80px;
+  border-bottom: 1px solid #dddfe2;
+}
+
+.top-box-firstPara {
+  color: #1c1e21;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.top-box-secondPara {
+  color: #1c1e21;
+  color: #606770;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.signUpPage-bottom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 432px;
+  height: 501px;
+  padding: 16px;
+}
+
+.userName-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 398px;
+  height: 39.6px;
+}
+
+.userName-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 193px;
+  height: 39.6px;
+  /* border: 1px solid black; */
+}
+
+.error_icon {
+  position: absolute;
+  right: 6px;
+  width: 19px;
+  height: 19px;
+  margin-right: 6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 398px;
+  height: 39.6px;
+}
+
+.inputField {
+  color: #1c1e21;
+  background-color: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  height: 39.6px;
+  padding: 11px;
+}
+
+.inputField::placeholder {
+  color: grey;
+}
+
+.firstName {
+  width: 193px;
+  text-transform: capitalize;
+}
+
+.surname {
+  width: 193px;
+  text-transform: capitalize;
+}
+
+.email {
+  width: 398px;
+}
+
+.password {
+  width: 398px;
+}
+
+/* Birth */
+.birth-box {
+  position: relative;
+  width: 398px;
+  height: 56px;
+}
+
+.birth-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 398px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.birth-box p {
+  color: #606770;
+  font-size: 12px;
+}
+
+.birth-select-box {
+  display: flex;
+  justify-content: space-between;
+  width: 398px;
+  height: 36px;
+}
+
+.birth-select-box div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  width: 125px;
+  height: 36px;
+}
+
+.birth-box select {
+  color: #1c1e21;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 15px;
+  width: 118px;
+  height: 34px;
+  padding: 8px;
+}
+
+/* Gender */
+.gender-box {
+  width: 398px;
+  height: 56px;
+}
+
+.gender-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 398px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.gender-box p {
+  color: #606770;
+  font-size: 12px;
+}
+
+.gender-items {
+  display: flex;
+  justify-content: space-between;
+  width: 398px;
+  height: 36px;
+}
+
+.gender-items div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #1c1e21;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  outline: none;
+  font-size: 15px;
+  width: 125px;
+  height: 36px;
+  padding-left: 10px;
+}
+
+/* Terms */
+.terms {
+  color: #777;
+  font-size: 11px;
+}
+
+.terms a {
+  text-decoration: none;
+  color: #385898;
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  color: white;
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 194px;
+  height: 36px;
+  margin: 6px 0px;
+}
+
+.route-to-loginPage a {
+  text-decoration: none;
+  color: #1877f2;
+  font-size: 15px;
+}
+
+/* error massage */
+.error-massage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 39.6px;
+}
+
+.error-massage p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #be4b49;
+  font-size: 0.8rem;
+  line-height: 16px;
+  width: fit-content;
+  height: 100%;
+  padding: 0.4rem;
+}
+
+.error-massage div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.08rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.error-massage div img {
+  width: 1rem;
+  height: 1rem;
+}
+
+#firstName-error {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  right: 25rem;
+  width: 8.6rem;
+  height: 41px;
+  z-index: 1;
+}
+
+#firstName-error div {
+  right: 0.23rem;
+}
+
+#surname-error {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  left: 25rem;
+  width: 8.6rem;
+  height: 41px;
+  z-index: 1;
+}
+
+#surname-error div {
+  right: 7.34rem;
+}
+
+#surname-error div img {
+  transform: rotate(180deg);
+}
+
+#email-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 25.1rem;
+  width: 17rem;
+  height: fit-content;
+  padding-right: 0.8rem;
+  z-index: 1;
+}
+
+#password-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 25.1rem;
+  width: 19rem;
+  height: fit-content;
+  padding-right: 0.8rem;
+  z-index: 1;
+}
+
+#birth-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 25.1rem;
+  top: 1rem;
+  width: 20rem;
+  height: fit-content;
+  padding-right: 0.8rem;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  #email-error {
+    width: 12rem;
+  }
+
+  #password-error {
+    width: 17rem;
+  }
+
+  #birth-error {
+    width: 17rem;
+    top: 0.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #popUp {
+    width: 600px;
+  }
+
+  #email-error {
+    width: 12rem;
+  }
+
+  #password-error {
+    width: 12rem;
+  }
+
+  #birth-error {
+    width: 12rem;
+    top: 0.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #popUp {
+    width: 396px;
+  }
+
+  #firstName-error {
+    width: 6.5rem;
+    right: 25.9rem;
+  }
+
+  #firstName-error div {
+    right: 0rem;
+    left: 6.25rem;
+  }
+
+  #surname-error {
+    width: 6.5rem;
+    left: 25.9rem;
+  }
+
+  #surname-error div {
+    right: 6.25rem;
+  }
+
+  .error-massage {
+    font-size: 0.8rem;
+  }
+
+  #email-error {
+    width: 6.5rem;
+  }
+
+  #password-error {
+    width: 6.5rem;
+  }
+
+  #birth-error {
+    width: 6.5rem;
+    top: -2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #firstName-error {
+    justify-content: center;
+    width: 25rem;
+    right: 0rem;
+    top: -4.3rem;
+  }
+
+  .error-massage div img {
+    display: none;
+  }
+
+  .error-massage {
+    font-size: 0.8rem;
+  }
+
+  #surname-error {
+    width: 8.2rem;
+    left: 8rem;
+    top: -4.3rem;
+  }
+
+  #surname-error div {
+    right: 6.25rem;
+  }
+
+  #email-error {
+    width: 25rem;
+    right: 0rem;
+    top: -7.5rem;
+    padding-right: 0rem;
+  }
+
+  #password-error {
+    width: 25rem;
+    right: 0rem;
+    top: -10.7rem;
+    padding-right: 0rem;
+  }
+
+  #birth-error {
+    width: 25rem;
+    right: 0rem;
+    top: -14rem;
+    padding-right: 0rem;
+  }
+}

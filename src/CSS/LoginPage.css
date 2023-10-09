@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+  font-family: sans-serif;
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.loginPage-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: fit-content;
+}
+
+.loginPage-left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 495px;
+  height: 250px;
+  margin-right: 3rem;
+}
+
+.loginPage-left-box img {
+  display: flex;
+  align-items: center;
+  font-size: 57px;
+  width: fit-content;
+  height: 106px;
+  margin-left: -2rem;
+}
+
+.loginPage-left-box p {
+  color: #1c1e21;
+  font-size: 28px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.loginPage-right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 396px;
+  height: 300px;
+  padding: 16px;
+}
+
+.loginPage-right-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 363px;
+  height: 51px;
+  margin: 6px 0px;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+}
+
+.loginPage-right-box div input {
+  color: #1c1e21;
+  font-size: 17px;
+  width: 323px;
+  height: 49px;
+  padding: 14px 5px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.loginPage-right-box input::placeholder {
+  color: grey;
+}
+
+.loginPage-right-box div img {
+  width: 19px;
+  height: 19px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 6px;
+  /* z-index: 1; */
+}
+
+.login-btn {
+  color: white;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 363px;
+  height: 48px;
+  padding: 14px 16px;
+  margin: 6px 0px;
+}
+
+.create-account-btn {
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 195px;
+  height: 48px;
+  padding: 14px 16px;
+  margin: 6px 0px;
+}
+
+.create-account-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add User Submit Successfully PopUp Section*/
+#popUp {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 700px;
+  height: 250px;
+  font-size: 1.93rem;
+}
+
+#popUp h1 {
+  color: #1877f2;
+  font-size: 2.2rem;
+}
+
+#popUp img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.popUpBtn-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 2.8rem;
+}
+
+#popUpBtn {
+  font-size: 0.88rem;
+  width: 8rem;
+  height: 2.8rem;
+  background: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 0.37rem;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .loginPage-left-box {
+    width: 330px;
+  }
+
+  #popUp {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPage-left-box {
+    justify-content: flex-start;
+    width: 396px;
+    margin-right: 0rem;
+  }
+
+  #popUp {
+    width: 396px;
+  }
+}
