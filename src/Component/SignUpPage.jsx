@@ -336,6 +336,7 @@ const SignUpPage = () => {
                   onChange={firstNameInputChange}
                   onBlur={firstNameBlur}
                   placeholder="First name"
+                  autoComplete="off"
                 />
                 <img
                   className="error_icon"
@@ -370,6 +371,7 @@ const SignUpPage = () => {
                   onBlur={surnameBlur}
                   className="surname inputField "
                   placeholder="Surname"
+                  autoComplete="off"
                 />
                 <img
                   className="error_icon"
@@ -405,6 +407,7 @@ const SignUpPage = () => {
                 onChange={emailInputChange}
                 onBlur={emailBlur}
                 placeholder="Email address or phone number"
+                autoComplete="off"
               />
               <img
                 className="error_icon"
@@ -441,6 +444,7 @@ const SignUpPage = () => {
                 onBlur={passwordBlur}
                 className="password inputField"
                 placeholder="New Password"
+                autoComplete="off"
               />
               <img
                 className="error_icon"
@@ -660,6 +664,7 @@ const SignUpPage = () => {
                     value="female"
                     onChange={genderInputChange}
                     onBlur={genderBlur}
+                    autoComplete="off"
                     checked={state.gender === "female" ? true : false}
                   />
                 </div>
@@ -676,6 +681,7 @@ const SignUpPage = () => {
                     value="male"
                     onChange={genderInputChange}
                     onBlur={genderBlur}
+                    autoComplete="off"
                     checked={state.gender === "male" ? true : false}
                   />
                 </div>
@@ -692,6 +698,7 @@ const SignUpPage = () => {
                     value="other"
                     onChange={genderInputChange}
                     onBlur={genderBlur}
+                    autoComplete="off"
                     checked={state.gender === "other" ? true : false}
                   />
                 </div>

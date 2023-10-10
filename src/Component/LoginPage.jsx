@@ -190,6 +190,7 @@ const LoginPage = () => {
                 onChange={emailInputChange}
                 onBlur={emailInputBlur}
                 placeholder="Email address or phone number"
+                autoComplete="off"
               />
               <img
                 src={Error_icon}
@@ -212,6 +213,7 @@ const LoginPage = () => {
                 onChange={passwordInputChange}
                 onBlur={passwordInputBlur}
                 placeholder="Password"
+                autoComplete="off"
               />
               <img
                 className="eye-icon"
