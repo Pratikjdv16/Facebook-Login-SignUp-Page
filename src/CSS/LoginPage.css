@@ -10,8 +10,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background-color: #f0f2f5;
+  height: 100%;
 }
 
 .loginPage-box {
@@ -20,7 +19,7 @@
   justify-content: center;
   align-items: center;
   width: 1000px;
-  height: fit-content;
+  height: 300px;
 }
 
 .loginPage-left-box {
@@ -64,7 +63,7 @@
 
 .loginPage-right-box div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   width: 363px;
@@ -77,9 +76,9 @@
 .loginPage-right-box div input {
   color: #1c1e21;
   font-size: 17px;
-  width: 323px;
+  width: 362px;
   height: 49px;
-  padding: 14px 5px;
+  padding: 14px;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -90,10 +89,12 @@
 }
 
 .loginPage-right-box div img {
+  position: absolute;
+  right: 6px;
   width: 19px;
   height: 19px;
   margin-right: 6px;
-  cursor: pointer;
+  z-index: 1;
 }
 
 .eye-icon {
@@ -189,6 +190,15 @@
 }
 
 @media (max-width: 768px) {
+  .loginPage {
+    margin-top: 1rem;
+  }
+
+  .loginPage-box {
+    width: 370px;
+    height: fit-content;
+  }
+
   .loginPage-left-box {
     justify-content: flex-start;
     width: 396px;
@@ -197,5 +207,62 @@
 
   #popUp {
     width: 396px;
+  }
+}
+
+@media (max-width: 600px) {
+  .loginPage {
+    margin-top: 1rem;
+  }
+
+  .loginPage-box {
+    width: 370px;
+    height: fit-content;
+  }
+
+  .loginPage-left-box {
+    justify-content: flex-start;
+    width: 350px;
+    margin-right: 0rem;
+  }
+
+  .loginPage-right-box {
+    width: 370px;
+  }
+
+  .loginPage-right-box div {
+    width: 340px;
+  }
+
+  .loginPage-right-box div input {
+    width: 339px;
+  }
+
+  .loginPage-right-box div img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .login-btn {
+    width: 340px;
+  }
+
+  .create-account-btn {
+    width: 195px;
+  }
+
+  #popUp {
+    width: 339px;
+    height: 200px;
+  }
+
+  #popUp h1 {
+    font-size: 1.5rem;
+  }
+
+  #popUpBtn {
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 2.4rem;
   }
 }

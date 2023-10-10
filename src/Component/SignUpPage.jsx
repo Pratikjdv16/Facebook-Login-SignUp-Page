@@ -122,7 +122,7 @@ const SignUpPage = () => {
       ...styleState,
       birth_borderColor: "#ccd0d5",
       birth_visibility: "hidden",
-      birth_error_massage: "flex",
+      birth_error_massage: "none",
     });
   };
   const birthMonthInputChange = (event) => {
@@ -134,7 +134,7 @@ const SignUpPage = () => {
       ...styleState,
       birth_borderColor: "#ccd0d5",
       birth_visibility: "hidden",
-      birth_error_massage: "flex",
+      birth_error_massage: "none",
     });
   };
   const birthYearInputChange = (event) => {
@@ -146,7 +146,7 @@ const SignUpPage = () => {
       ...styleState,
       birth_borderColor: "#ccd0d5",
       birth_visibility: "hidden",
-      birth_error_massage: "flex",
+      birth_error_massage: "none",
     });
   };
   const genderInputChange = (event) => {
@@ -230,14 +230,13 @@ const SignUpPage = () => {
   const birthBlur = () => {
     if (
       state.birthDate === "" ||
-      state.birthMonth === "" ||
-      state.birthYear === ""
+      (state.birthMonth === "" && state.birthYear === "")
     ) {
       setStyleState({
         ...styleState,
         birth_borderColor: "red",
         birth_visibility: "visible",
-        birth_error_massage: "none",
+        birth_error_massage: "flex",
       });
     } else {
       setStyleState({

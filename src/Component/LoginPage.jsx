@@ -36,7 +36,11 @@ const LoginPage = () => {
   // onChange Event
   const emailInputChange = (event) => {
     setState({ ...state, email: event.target.value });
-    setStyleState({ ...styleState, email_borderColor: "#1b74e4" });
+    setStyleState({
+      ...styleState,
+      email_borderColor: "#1b74e4",
+      email_visibility: "hidden",
+    });
   };
   const passwordInputChange = (event) => {
     setState({ ...state, password: event.target.value });
