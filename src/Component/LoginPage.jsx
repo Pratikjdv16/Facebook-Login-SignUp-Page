@@ -167,7 +167,7 @@ const LoginPage = () => {
         <section className="loginPage-box">
           <aside className="loginPage-left-box">
             <img
-              src="https://static.xx.fbcdn.net/rsrc.php/yI/r/4aAhOWlwaXf.svg"
+              src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
               alt=""
             />
             <p>
